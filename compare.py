@@ -160,7 +160,7 @@ def build_report(pairs: list[dict]) -> str:
     lines += [
         "---",
         "",
-        "## 怎么用这份报告（面试话术）",
+        "## 怎么用这份报告",
         "",
         "**不要念数字，要讲结论和下一步**：",
         "",
@@ -230,7 +230,7 @@ def main() -> None:
         print(f"（有 {len(skipped)} 组还没生成：{skipped}）")
 
     Path(args.report).write_text(build_report(pairs), encoding="utf-8")
-    print(f"报告已写入：{args.report}   ← 这个文件面试时可以直接打开")
+    print(f"报告已写入：{args.report}   ← 这个文件可以直接打开查看")
 
 
 if __name__ == "__main__":

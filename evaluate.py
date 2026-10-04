@@ -5,7 +5,7 @@
     python batch.py --site US          # 先生成（会调用模型）
     python evaluate.py                 # 再评测（不花钱，只读已有结果）
 
-【面试要点：这就是你项目里的「量化结果」从哪来】
+【这就是项目里的「量化结果」从哪来】
 不要只说「我做了个生成 Listing 的工具」，要说：
     「我用 30 个 SKU × 2 个站点跑了一遍，首轮合规率 X%，
       加了一轮定点修复后到 Y%，平均修复轮数 1.2 轮，
@@ -136,7 +136,7 @@ def build_report(summary: dict) -> str:
     lines += [
         "## 怎么用这份报告",
         "",
-        "面试时不要念数字，要讲**因果**：",
+        "汇报时不要念数字，要讲**因果**：",
         "",
         "- 「首轮通过率只有 X%，所以我加了定点修复，把具体违规项回喂给模型，最终合规率到 Y%。」",
         "- 「平均修复轮数是 Z，每多一轮就多一次 API 调用，所以我压缩了 Prompt 里的规则表述，",
@@ -192,7 +192,7 @@ def main() -> None:
     path = args.out or str(OUTPUT_DIR / "eval_report.md")
     with open(path, "w", encoding="utf-8") as f:
         f.write(build_report(summary))
-    print(f"报告已写入：{path}   ← 直接放进 GitHub README，面试时是硬通货")
+    print(f"报告已写入：{path}   ← 可以直接放进 README 长期归档")
 
 
 if __name__ == "__main__":

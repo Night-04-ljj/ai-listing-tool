@@ -167,7 +167,7 @@ def build_user_prompt(product: dict, site: str, keywords: list[str],
 def build_repair_prompt(draft_json: str, violations_text: str, brand_guide: dict) -> str:
     """把「具体违规项」回喂给模型 —— 这是让合规率上去的关键一步。
 
-    【面试要点】不要只说「请重新生成」，要说清楚**哪里违规了、违反哪条规则**。
+    【设计要点】不要只说「请重新生成」，要说清楚**哪里违规了、违反哪条规则**。
     定位越精确，模型一次改对的概率越高，重试次数就越少，成本越低。
     """
     return f"""你上一版输出存在以下违规项，请**只修改这些问题**，其余内容尽量保持不变。
