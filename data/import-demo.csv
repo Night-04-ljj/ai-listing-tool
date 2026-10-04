@@ -1,0 +1,12 @@
+SKU,产品名称,系列,产品类型,类目,适配尺寸,承重kg,VESA孔距,材质,颜色,主要功能,质保
+S02M1225B,FITUEYES Master V2 FT48 Floor TV Stand with Wheels,Master,落地式带轮电视支架,tv_stand,24-48 inch,35,75x75 mm to 200x200 mm,金属,黑色,高度可调（行程 200 mm）；观看高度 1000-1200 mm；四个轮子便于移动；理线槽；可选带收纳层版本,10 年
+S02M1224A,FITUEYES Master V2 FT48 Floor TV Stand with Wheels,Master,落地式带轮电视支架,tv_stand,24-48 inch,35,75x75 mm to 200x200 mm,金属,白色,高度可调（行程 200 mm）；观看高度 1000-1200 mm；四个轮子便于移动；理线槽；可选带收纳层版本,10 年
+B08QJ5C3BT,FITUEYES Eiffel Design TV Stand 75-100 inch,Eiffel,落地式带层板电视支架,tv_stand,75-100 inch,85,up to 800x600 mm,金属与木质,,旋转功能；高度可调；置物层板；理线管理；Eiffel 系列设计,10 年
+F82F2461B,FITUEYES Eiffel Tall TV Stand,Eiffel,高型落地电视支架,tv_stand,43-75 inch,60,,金属,黑色,隐藏式理线；高度与角度可调；Eiffel 系列设计,10 年
+PICASSO-FT65,FITUEYES Picasso Corner TV Stand,Picasso,转角落地电视支架,tv_stand,32-88 inch,55,200x100 mm to 600x400 mm,钢与榉木,胡桃木色,画架造型；左右各转 20 度；高度可调；集成理线；手工榉木,10 年
+ZEN-FT65,FITUEYES Zen Wooden TV Stand,Zen,木质落地电视支架,tv_stand,32-88 inch,60,100x100 mm to 600x400 mm,铁艺与榉木格栅,,左右各转 15 度；多档高度调节；背部理线收纳；可选层板与音箱支架,10 年
+CANTOR-FT100,FITUEYES Cantor TV Stand,Cantor,落地电视支架,tv_stand,,,,,,Cantor 系列,10 年
+EF-SS3,FITUEYES Eiffel Speaker Stand (Pair),Eiffel,落地音箱支架,audio_stand,,,,金属与木质,,一对装；Eiffel 系列设计；适配主流书架音箱,
+EF-HIFI2,FITUEYES Eiffel HiFi Rack,Eiffel,HiFi 音响机架,audio_stand,,,,金属与木质层板,,唱机与唱片收纳；梯形结构；可选轮子,10 年
+TT206001GB,FITUEYES TV Stand with Mount 32-60 inch,,带挂架电视柜,tv_stand,32-60 inch,,up to 600x400 mm,,,70 度旋转挂架；高度可调；两层搁板；理线管理,
+,示例：漏填 SKU 的行（导入时应该被跳过并计数）,Zen

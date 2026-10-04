@@ -1,0 +1,15 @@
+# Keep this file ASCII-only (pip reads requirement files with the OS locale
+# encoding, so non-ASCII comments can crash pip on Chinese Windows).
+#
+# ===========================================================================
+#  THIS FILE IS INTENTIONALLY EMPTY -- the project needs ZERO third-party
+#  packages.
+#
+#  Everything uses the Python standard library only:
+#     urllib   -> call the model API over HTTP (no openai SDK)
+#     re/json/csv/hashlib/dataclasses -> the rest
+#     config.py contains a 15-line .env reader (no python-dotenv)
+#
+#  Why: fewer dependencies means fewer ways for `pip install` to hang or fail.
+#  This project runs on any machine with Python 3.10+, offline, with no venv.
+# ===========================================================================

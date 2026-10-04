@@ -1,0 +1,21 @@
+.env
+output/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+
+# pip 在安装失败时会把临时目录留在当前文件夹里，别提交上去
+pip-*
+tmp*/
+
+# 产品表导入时自动生成的备份快照，不需要进版本库
+data/*.bak
+data/products.csv.*.bak
+
+# 说明：output/ 被忽略，但现场演示前请确认本地已有：
+#   output/llm_cache/          大模型响应缓存（断网演示靠它）
+#   output/listings_*.csv      生成的 Listing 表格
+#   output/eval_report.md      评测报告

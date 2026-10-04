@@ -1,0 +1,74 @@
+{
+  "_note": "真实在售 Listing 的标题，用作对比基准（ground truth）。compare.py 拿 AI 生成的标题和这里做结构化对比。",
+  "_how_to_get": "亚马逊对抓取拦截很严，正文（五点描述）拿不到，但标题能拿到——标题本身就把规格说完了。新增基准时把真实标题粘到 title 字段即可，site 填你打算拿哪份 AI 输出来比。",
+  "_coverage": "目前覆盖 4 个市场（Amazon.de / .ca / .ae / .co.jp）、3 个产品系列（Master / Eiffel / Zen）。",
+  "items": [
+    {
+      "sku": "S02M1225B",
+      "site": "DE",
+      "asin": "B0CMZMBKG5",
+      "marketplace": "Amazon.de",
+      "source": "https://www.amazon.de/dp/B0CMZMBKG5/",
+      "title": "FITUEYES TV Ständer Rollbar für 24–48 Zoll, bis zu 35kg, Master Serie | TV Standfuss, VESA Max. 200x200mm, Höhenverstellbar, mit Rollen & Kabelmanagement, für Wohnung Büro Heim, Weiß",
+      "note": "这里写的是 Weiß（白色），实际对应白色变体 S02M1224A，但同款同标题结构，对比标题结构仍然有效"
+    },
+    {
+      "sku": "S02M1224A",
+      "site": "DE",
+      "asin": "B0CMZMBKG5",
+      "marketplace": "Amazon.de",
+      "source": "https://www.amazon.de/dp/B0CMZMBKG5/",
+      "title": "FITUEYES TV Ständer Rollbar für 24–48 Zoll, bis zu 35kg, Master Serie | TV Standfuss, VESA Max. 200x200mm, Höhenverstellbar, mit Rollen & Kabelmanagement, für Wohnung Büro Heim, Weiß"
+    },
+    {
+      "sku": "B08QJ5C3BT",
+      "site": "DE",
+      "asin": "B08QJ5C3BT",
+      "marketplace": "Amazon.de",
+      "source": "https://www.amazon.de/dp/B08QJ5C3BT/",
+      "title": "FITUEYES Design TV Ständer 75-100 Zoll Moderner TV Stand mit Ablagen Kabelmanagement aus Holz und Metall TV Standfuss Schwenkbar Höhenverstellbar bis zu 85kg Max.VESA 800 * 600 Eiffel Serie"
+    },
+    {
+      "sku": "B0BHW3STTC",
+      "site": "US",
+      "asin": "B0BHW3STTC",
+      "marketplace": "Amazon.ae",
+      "source": "https://www.amazon.ae/dp/B0BHW3STTC/",
+      "title": "FITUEYES TV Floor Stand for 32-75 inch, Universal Swivel TV Stand, Tall TV Stand with Concealed Storage, Double Column Adjustable Shelf, White",
+      "note": "来自 Amazon.ae（英文），拿它和美国站输出对比——两边都是英文，标题结构可比"
+    },
+    {
+      "sku": "B0CFKJ47LK",
+      "site": "DE",
+      "asin": "B0CFKJ47LK",
+      "marketplace": "Amazon.de",
+      "source": "https://www.amazon.de/dp/B0CFKJ47LK/",
+      "title": "FITUEYES TV Ständer Rollbar Fernsehständer mit Rollen Bodenständer TV Rollwagen für 40-85 Zoll Fernseher höhenverstellbar hoch Max 60KG VESA 600x400 mm"
+    },
+    {
+      "sku": "B0CXX1S36J",
+      "site": "DE",
+      "asin": "B0CXX1S36J",
+      "marketplace": "Amazon.de",
+      "source": "https://www.amazon.de/dp/B0CXX1S36J/",
+      "title": "FITUEYES TV Bodenständer Rollbar mit Holzablage TV Standfuß TV Ständer Fernsehstand mit Rollen höhenverstellbar schwenkbar für 32 bis 70 Zoll Flachbildschirm bis zu 40kg. Max. VESA. 400 * 600"
+    },
+    {
+      "sku": "B0CHY29QNL",
+      "site": "DE",
+      "asin": "B0CHY29QNL",
+      "marketplace": "Amazon.de",
+      "source": "https://www.amazon.de/dp/B0CHY29QNL/",
+      "title": "FITUEYES TV Stand Made of Beech Wood TV Stand for 32-65 Inch TV Stand Rotatable Height Adjustable Zen Series"
+    },
+    {
+      "sku": "B0825J8QDC",
+      "site": "US",
+      "asin": "B0825J8QDC",
+      "marketplace": "Amazon.ca",
+      "source": "https://www.amazon.ca/dp/B0825J8QDC/",
+      "title": "FITUEYES TV Stand with Mount for 32 to 60 inch Flat Curved Screen Adjustable Heights 70° Swivel Bracket 2 Shelves Cable Management Max VESA 600x400 mm TT206001GB",
+      "note": "来自 Amazon.ca（英文），拿它和美国站输出对比"
+    }
+  ]
+}

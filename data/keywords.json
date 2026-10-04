@@ -1,0 +1,122 @@
+{
+  "_note": "关键词库。现在只有几十条，所以直接全量塞进 Prompt，不需要 RAG。等它涨到几千条，再考虑按类目过滤或检索。",
+
+  "tv_wall_mount": {
+    "US": [
+      "tv wall mount",
+      "wall mount tv bracket",
+      "tv bracket for 75 inch tv",
+      "heavy duty tv wall mount",
+      "low profile tv mount",
+      "vesa tv mount",
+      "flat screen tv wall bracket",
+      "tilt tv wall mount"
+    ],
+    "UK": [
+      "tv wall bracket",
+      "wall mount for tv",
+      "tv bracket 55 inch",
+      "heavy duty tv bracket",
+      "slim tv wall mount",
+      "vesa wall bracket",
+      "tilting tv bracket"
+    ],
+    "DE": [
+      "tv wandhalterung",
+      "fernseher wandhalterung",
+      "wandhalterung tv 55 zoll",
+      "tv halterung wand",
+      "vesa wandhalterung",
+      "flache tv wandhalterung",
+      "schwenkbare tv halterung"
+    ],
+    "JP": [
+      "テレビ 壁掛け金具",
+      "テレビ壁掛け 55型",
+      "tvウォールマウント",
+      "壁掛けテレビ 金具",
+      "vesa 壁掛け",
+      "薄型 テレビスタンド 壁掛け"
+    ]
+  },
+
+  "tv_stand": {
+    "_source": "US/UK 这两组是真实数据：取自 FITUEYES 欧洲官网 Master V2 FT48 商品页的 tags 字段（eu.fitueyes.com）。DE/JP 仍是我按常见说法起草的，需要用亚马逊后台的搜索词报告校准。",
+    "US": [
+      "floor TV stand",
+      "TV stand",
+      "TV media stand",
+      "universal TV stand",
+      "universal TV stand base",
+      "corner tv stand",
+      "corner flat screen TV stand",
+      "adjustable height tv stand",
+      "42 inch tv stand"
+    ],
+    "UK": [
+      "floor TV stand",
+      "TV stand",
+      "TV media stand",
+      "universal TV stand",
+      "universal TV stand base",
+      "corner tv stand",
+      "corner flat screen TV stand",
+      "adjustable height tv stand",
+      "42 inch tv stand"
+    ],
+    "_source_de": "以上 US/UK 与下面 DE 的 tv_stand 词条都是真实数据：US/UK 取自官网商品页 tags 字段；DE 从 FITUEYES 在 Amazon.de 的真实在售标题里提取（那些标题本身就是 SEO 优化的）。JP 仍是我起草的，需要用亚马逊后台搜索词报告校准。",
+    "DE": [
+      "TV Ständer",
+      "TV Ständer Rollbar",
+      "TV Ständer mit Rollen",
+      "Fernsehständer mit Rollen",
+      "TV Bodenständer",
+      "TV Rollwagen",
+      "TV Standfuß",
+      "Fernsehstand",
+      "höhenverstellbarer TV Ständer",
+      "schwenkbarer TV Ständer"
+    ],
+    "JP": [
+      "テレビスタンド 壁掛け不要",
+      "テレビ 台 昇降",
+      "電動テレビスタンド",
+      "回転 テレビスタンド",
+      "高さ調整 テレビスタンド"
+    ]
+  },
+
+  "monitor_mount": {
+    "US": [
+      "monitor wall mount",
+      "monitor arm wall mount",
+      "vesa monitor bracket",
+      "single monitor wall mount"
+    ],
+    "DE": [
+      "monitor wandhalterung",
+      "monitor halterung wand",
+      "vesa monitor halterung"
+    ],
+    "JP": [
+      "モニター 壁掛け金具",
+      "モニターアーム 壁掛け"
+    ]
+  },
+
+  "av_furniture": {
+    "US": [
+      "tv cabinet with mount",
+      "tv console table",
+      "entertainment center with tv mount"
+    ],
+    "DE": [
+      "tv lowboard mit halterung",
+      "fernsehtisch mit wandhalterung"
+    ],
+    "JP": [
+      "テレビ台 壁掛け対応",
+      "テレビボード 金具付き"
+    ]
+  }
+}
