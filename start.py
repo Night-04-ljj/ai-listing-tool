@@ -6,7 +6,7 @@ AI Listing 工具 · 一键启动器
     py start.py            进入菜单
     py start.py --check    只做环境自检，不安装任何东西
     py start.py --selftest 直接跑离线自测
-    py start.py --gen FT48-B --site US
+    py start.py --gen S02M1225B --site US
     py start.py --batch US DE
     py start.py --eval
 """

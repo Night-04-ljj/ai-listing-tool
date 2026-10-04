@@ -4,7 +4,7 @@
 用法：
     python batch.py --site US
     python batch.py --site US --site DE
-    python batch.py --site US --sku FT48-B
+    python batch.py --site US --sku S02M1225B
     python batch.py --site US --timestamp     # 保留一份带时间戳的历史文件
 
 【为什么一定要有批量】

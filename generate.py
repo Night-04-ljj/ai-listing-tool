@@ -2,8 +2,8 @@
 核心：生成 → 校验 → 定点修复 → 兜底裁剪。
 
 用法：
-    python generate.py --sku FT48-B --site US
-    python generate.py --sku SD01 --site DE
+    python generate.py --sku S02M1225B --site US
+    python generate.py --sku B08QJ5C3BT --site DE
     python generate.py --list                 # 看有哪些 SKU
 
 【这个流程为什么重要】

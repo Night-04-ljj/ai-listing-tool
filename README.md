@@ -3,6 +3,11 @@
 > 面向**跨境电商自有品牌**的商品详情页文案生成工具：产品参数表进 → 合规文案出。
 > 纯 Python + 大模型 API，**不使用 RAG、不使用 LangChain**，也**不需要向量数据库**。
 
+**不想跑代码，只想看效果？** → [生成结果样例](docs/example-listings.md) ｜ [评测报告](docs/eval-report.md) ｜ [与真实在售文案的对比](docs/compare-report.md)
+
+> 上面三份是用 `output/` 里的真实产物复制过来的（`output/` 本身不进版本库）。
+> 克隆下来之后，**只要填一个自己的 API Key 就能重新生成**；不填也能跑离线自测。
+
 ---
 
 ## 〇、产品数据的来源（先看这个，别搞错）
@@ -119,6 +124,20 @@ Master V2 FT48 的承重，两处来源不一致：
 > **零依赖**：不需要 `pip install`，不需要虚拟环境，不需要联网装东西。
 > 有 Python 3.10+ 就能跑。双击 `启动.bat`（或 `py start.py`）即可。
 
+### 第一次运行要准备什么
+
+**只需要一样东西：一个你自己的大模型 API Key。其他什么都不用改。**
+
+1. 运行 `py start.py`（或双击 `启动.bat`）—— 它会**自动**从 `.env.example` 生成 `.env`
+2. 打开 `.env`，在 `LLM_API_KEY=` 后面填上你的 Key
+3. 再运行一次，按菜单操作
+
+**没有 Key 也能做的事**：`python selftest.py` —— 规则引擎的 11 个离线用例，不联网、不花钱。
+网页界面也能打开，只是点生成会提示需要配置 Key。
+
+**想换服务商**：改 `.env` 里的 `LLM_BASE_URL` + `LLM_MODEL` 就行，
+任何 OpenAI 兼容接口都能用（DeepSeek / 通义 / 硅基流动 / OpenAI / 本地 Ollama）。
+
 ```bash
 # 1. 不需要装任何东西！
 #    本项目零依赖，只用 Python 标准库。
@@ -135,10 +154,10 @@ python selftest.py
 python generate.py --list
 
 # 5. 生成单个 SKU
-python generate.py --sku FT48-B --site US
+python generate.py --sku S02M1225B --site US
 
 # 6. 生成德语站点
-python generate.py --sku SD01 --site DE
+python generate.py --sku S02M1225B --site DE
 
 # 7. 批量跑（产品表进，CSV 出，可直接发运营）
 python batch.py --site US --site DE
@@ -237,7 +256,8 @@ python web.py
 | `evaluate.py` | 合规率、关键词覆盖率、修复轮数 | "这些数字就是从这来的" |
 | `web.py` | **零依赖 Web 页面**（标准库 http.server） | "不用 Flask，因为这个项目坚持零依赖" |
 | `selftest.py` | 离线测试规则引擎（不调用模型） | "校验是纯逻辑，可以离线测，不用烧额度" |
-| `data/` | 品牌规范、关键词库、示例产品表 | "换成公司真实资料就能用" |
+| `data/` | 品牌规范、关键词库、产品表、真实在售基准 | "换成公司真实资料就能用" |
+| `docs/` | 生成结果样例、评测报告、对比报告 | 见文件开头的「不想跑代码，只想看效果」 |
 
 ### 产出物（只有 6 项，不再是一条文案两个文件）
 
@@ -252,7 +272,7 @@ output/
 ```
 
 > 需要把单独一条发给同事时，加 `--split`：
-> `python generate.py --sku FT48-B --site US --split`
+> `python generate.py --sku S02M1225B --site US --split`
 
 ---
 
